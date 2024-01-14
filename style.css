@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+div:not("#app"){
+    width: 300px;
+    height: 300px;
+}
+
+body #app{
+    min-height: 100vh;
+    background-color: black;
+    color: whitesmoke;
+}
+
+h1,a,p,button{
+    padding: 0.5rem;
+}
+
+nav{
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+    color: black;
+}
+
+nav .directory{
+    text-align: end;
+}
+
+nav .links{
+    margin-right: 1rem;
+    text-align: end;
+}
+
+nav .links i{
+    color: black;
+    cursor: pointer;
+}
+
+nav .links i.fa-twitter{
+    color: #1DA1F2;
+}
+
+
+main{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+form .input--number{
+    outline: none;
+    width: 600px;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 2px;
+    font-family: inherit;
+    color: black;
+}
+
+form button{
+    font-family: inherit;
+    color: black;
+    border-radius: 2px;
+    padding: 0.5rem 1rem;
+    background: whitesmoke;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.form-container{
+    min-width: 90vw;
+    border: 1px dotted whitesmoke;
+    padding: 5rem;
+}
+.form-container form{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.form-container fieldset{
+    padding: 1rem;
+}
+
+.render-button{
+    padding: 0.5rem 1rem;
+    font-family: Poppins;
+    font-size: 1rem;
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/* Utility Classes */
+
+.bg-red{
+    background-color: red;
+}
+
+.margin{
+    margin: 1rem;
+}
+
+.border{
+    border: 2px solid white;
+}
